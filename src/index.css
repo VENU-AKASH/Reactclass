@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar */
+  
+  .navbar {
+    background: #111827;
+    padding: 18px 0;
+  }
+  
+  .nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo span {
+    color: #60a5fa;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-size: 15px;
+  }
+  
+  .nav-links a:hover {
+    color: #60a5fa;
+  }
+  
+  /* Home */
+  
+  .home-page {
+    min-height: calc(100vh - 70px);
+  }
+  
+  .hero {
+    max-width: 1200px;
+    min-height: 500px;
+    margin: auto;
+    padding: 70px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-small {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 span {
+    color: #2563eb;
+  }
+  
+  .hero-content > p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .shop-btn,
+  .explore-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .shop-btn:hover,
+  .explore-btn:hover {
+    opacity: 0.85;
+  }
+  
+  .hero-card {
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-product {
+    font-size: 150px;
+  }
+  
+  /* Features */
+  
+  .features {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .feature {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .feature div {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h3 {
+    margin-bottom: 8px;
+  }
+  
+  .feature p {
+    color: #666;
+  }
+  
+  /* Home About */
+  
+  .home-about {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .home-about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .home-about p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  /* Other pages */
+  
+  .page {
+    max-width: 1100px;
+    min-height: 70vh;
+    margin: auto;
+    padding: 70px 30px;
+  }
+  
+  .page h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .page p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 50px;
+    }
+  
+    .hero h1 {
+      font-size: 40px;
+    }
+  
+    .hero-card {
+      width: 280px;
+      height: 280px;
+    }
+  
+    .hero-product {
+      font-size: 100px;
+    }
+  
+    .features {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .features {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero h1 {
+      font-size: 34px;
+    }
+  }
